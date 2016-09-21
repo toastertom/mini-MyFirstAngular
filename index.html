@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="friendsList" >
+  <head>
+    <meta charset="utf-8">
+    <title>Angular First</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  </head>
+  <body ng-controller="mainCtrl">
+
+    <p> My name is : {{myName}}</p>
+
+    <p>Here is a list of my friends:</p>
+
+    <input type="text" placeholder="Add New Friend" ng-model="name"/>
+    <button ng-click="addFriend(name)">Add</button>
+
+    <ul ng-repeat="friend in myFriends">
+      <li>{{friend}}</li>
+    </ul>
+
+    <hr/>
+
+    <!-- <ul ng-repeat="num in nums">
+      <li>{{num}}</num>
+    </ul> -->
+
+  <script src="sript/app.js"></script>
+  </body>
+</html>
